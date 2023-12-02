@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    background: #000000;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f00000;
+}
+
+.main {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+body {
+    background: #000000;
+    color: #eaebea;
+    font-family: 'Jura', sans-serif;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.page-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page {
+    height: 100vh;
+    padding: 0 50px 0 50px;
+}
+
+.photo {
+    width: 550px;
+}
+
+.hello-cont {
+    font-size: 45px;
+    width: 500px;
+}
+
+.hello-text {
+    transition: all .5s;
+}
+
+.hello-text:nth-child(2), .hello-text:nth-child(3) {
+    color: #f00000;
+}
+
+.hello-text:hover {
+    cursor: pointer;
+    margin-left: 45px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-cont {
+    padding-top: 50px;
+}
+
+.titles {
+    border-right: 3.5px solid #f00000;
+    padding: 0 10px 0 0;
+    text-align: right;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.languages-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 40%
+}
+
+.languages-title {
+    font-size: 35px;
+}
+
+.languages-list-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.language {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid #f00000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: all .35s;
+    border-radius: 100px;
+}
+
+.language:hover {
+    background: #f00000;
+    color: #000000;
+    font-weight: 700;
+}
